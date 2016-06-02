@@ -1,0 +1,18 @@
+
+  <div class="text-center col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+    <h1>All Beer</h1>
+  </div>
+  <div class=" col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+    <hr />
+    <% @cocktails.each do |cocktail| %>
+      <h1><%= link_to cocktail.name, cocktail %></h1>
+
+      <h5>Published <%= time_ago_in_words cocktail.created_at %> ago</h5>
+
+      <% if cocktail != @cocktails.last %>
+      <hr />
+
+    <% end %>
+    <% end %>
+  </div>
+

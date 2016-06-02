@@ -1,0 +1,9 @@
+<div class="col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+  <%= simple_form_for(@cocktail) do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :name %>
+    <%= f.button :submit %>
+    <%= link_to "Back to Index", cocktails_path %>
+<% end %>
+</div>
+
