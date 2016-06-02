@@ -18,10 +18,10 @@
 # i += 1
 # end
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Ingredient.create(name: "rhum")
-Ingredient.create(name: "vodka")
-Ingredient.create(name: "sugar")
-Ingredient.create(name: "milk")
+Ingredient.create(name: "Citron")
+Ingredient.create(name: "Glace")
+Ingredient.create(name: "Fruit rouge")
+Ingredient.create(name: "Houblon")
+Ingredient.create(name: "Malt")
+Ingredient.create(name: "Orge")
+Ingredient.create(name: "Eau")

@@ -1,8 +1,14 @@
 
-  <div class="text-center col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
-    <h1>All Beer</h1>
-  </div>
-  <div class=" col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+<div class="bg-dark-blue text-center col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+    <h1>Les Bieres</h1>
+</div>
+
+<div class=" col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+  <a class="margin btn btn-primary" href="http://localhost:3000/cocktails/new" role="button">Ajouter une Biere</a>
+</div>
+
+<div class="col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+  <div class="white_bg opacity">
     <hr />
     <% @cocktails.each do |cocktail| %>
       <h1><%= link_to cocktail.name, cocktail %></h1>
@@ -11,8 +17,7 @@
 
       <% if cocktail != @cocktails.last %>
       <hr />
-
     <% end %>
     <% end %>
   </div>
-
+</div>

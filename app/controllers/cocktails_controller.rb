@@ -6,6 +6,7 @@ class CocktailsController < ApplicationController
   end
 
   def show
+
   end
 
   def edit
@@ -35,10 +36,6 @@ class CocktailsController < ApplicationController
     end
   end
 
-  def destroy
-    @cocktail.destroy
-    redirect_to cocktail_path
-  end
 
 
   private
