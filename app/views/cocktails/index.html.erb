@@ -13,11 +13,11 @@
     <% @cocktails.each do |cocktail| %>
       <h1><%= link_to cocktail.name, cocktail %></h1>
 
-      <h5>Published <%= time_ago_in_words cocktail.created_at %> ago</h5>
+      <h5>Published <%= time_ago_in_words cocktail.created_at %> ago
+      <%= link_to "Supprimer", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-link" %>
 
-      <% if cocktail != @cocktails.last %>
+
       <hr />
-    <% end %>
     <% end %>
   </div>
 </div>

@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'figaro'
+
 gem 'faker'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
