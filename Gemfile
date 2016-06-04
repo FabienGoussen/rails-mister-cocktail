@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
+
 gem 'figaro'
 
+gem 'cloudinary'
+
+gem 'carrierwave'
+
 gem 'faker'
+
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
@@ -9,6 +15,7 @@ gem 'autoprefixer-rails'
 
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record

@@ -1,16 +1,25 @@
-<div class=" col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
+<div class=" col-md-offset-1 col-xs-12 col-sm-8 col-md-8">
   <a class="margin btn btn-primary" href="http://localhost:3000/cocktails/new" role="button">Ajouter une biere</a>
 </div>
-<div class="col-md-offset-2 col-xs-12 col-sm-8 col-md-8">
-  <div class="white_bg opacity">    <h1><%= @cocktail.name %></h1>
-
-    <% @cocktail.doses.each do |dose|%>
-    <%= (Ingredient.find(dose.ingredient_id)).name %>
-    <%= dose.description %>
-
-    <%end%><br>
-
-    <%= link_to "Back to Index", cocktails_path %> <br>
-    <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %> <br>
-
+<div class=" col-md-offset-1 col-xs-12 col-sm-10 col-md-10">
+  <div class="white_bg opacity">
+  <h1><%= @cocktail.name %></h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <%= image_tag @cocktail.photo.url(:logo_beer) %>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <% @cocktail.doses.each do |dose|%>
+        <%= (Ingredient.find(dose.ingredient_id)).name %>
+        <br>
+        <%= dose.description %>
+        <%end%>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+         <p class="btn btn-danger"> <%= link_to "Back to Index", cocktails_path %></p> <br>
+        <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+        </div>
+      </div>
+    </div>
 </div>
